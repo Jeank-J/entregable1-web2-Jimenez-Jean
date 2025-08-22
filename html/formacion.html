@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Navegación</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Barra de navegación lateral */
+    .sidebar {
+      position: fixed;          /* Se queda fija */
+      left: 0;
+      top: 0;
+      width: 220px;             /* Ancho de la barra */
+      height: 100%;             /* Ocupa toda la altura */
+      background-color: #f5f5f5;
+      padding: 10px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      overflow-y: auto;         /* Scroll si hay mucho contenido */
+    }
+
+    .sidebar a {
+      display: block;
+      color: green;
+      text-decoration: none;
+      padding: 8px 5px;
+      margin: 5px 0;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Contenido principal */
+    .main {
+      margin-left: 230px;   /* Se corre para no tapar con la sidebar */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="sidebar">
+    <h3>Servicios</h3>
+    <a href="#">Consultorio Jurídico</a>
+    <a href="#">Conciliación Virtual</a>
+    <a href="#">Biblioteca</a>
+    <a href="#">Editorial</a>
+    <a href="#">Centro de Idiomas</a>
+  </div>
+
+  <div class="main">
+    <h1>Contenido Principal</h1>
+    <p>Aquí va la información principal de la página.</p>
+    <p>La barra de navegación queda fija a la izquierda.</p>
+  </div>
+
+</body>
+</html>
