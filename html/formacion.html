@@ -3,62 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejemplo Navegación</title>
+  <title>Trabajo Autodescriptivo</title>
+  <link rel="stylesheet" href="/style/about.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #0a2540, #2274df);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* Barra de navegación lateral */
-    .sidebar {
-      position: fixed;          /* Se queda fija */
-      left: 0;
-      top: 0;
-      width: 220px;             /* Ancho de la barra */
-      height: 100%;             /* Ocupa toda la altura */
-      background-color: #f5f5f5;
-      padding: 10px;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-      overflow-y: auto;         /* Scroll si hay mucho contenido */
+    header {
+      text-align: center;
+      margin: 20px 0;
     }
 
-    .sidebar a {
+    header img {
+      width: 80px;
       display: block;
-      color: green;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 1.6rem;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 600px;
+      margin: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+
+    .intro h2 {
+      margin: 10px 0 5px;
+      font-size: 1.4rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    .avatar {
+      margin: 20px 0;
+    }
+
+    .avatar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00bfff;
+      object-fit: cover;
+    }
+
+    .summary {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin: 15px 0;
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .cta a {
       text-decoration: none;
-      padding: 8px 5px;
-      margin: 5px 0;
+      background: #00bfff;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background 0.3s;
     }
 
-    .sidebar a:hover {
-      background-color: #ddd;
-      border-radius: 5px;
+    .cta a:hover {
+      background: #008ecc;
     }
 
-    /* Contenido principal */
-    .main {
-      margin-left: 230px;   /* Se corre para no tapar con la sidebar */
-      padding: 20px;
+    .skills {
+      margin: 25px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.12);
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #ccc;
+      padding: 15px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  
-  <div class="sidebar">
-    <h3>Servicios</h3>
-    <a href="#">Consultorio Jurídico</a>
-    <a href="#">Conciliación Virtual</a>
-    <a href="#">Biblioteca</a>
-    <a href="#">Editorial</a>
-    <a href="#">Centro de Idiomas</a>
-  </div>
 
-  <div class="main">
-    <h1>Contenido Principal</h1>
-    <p>Aquí va la información principal de la página.</p>
-    <p>La barra de navegación queda fija a la izquierda.</p>
-  </div>
+  <header>
+    <img src="/img/imgIndex/logo_uniamazonia.png" alt="Logo Universidad">
+    <h1>Trabajo Autodescriptivo</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Jean Carlos Jiménez Ortega</h2>
+    <p><strong>Estudiante de Ingeniería de Sistemas</strong></p>
+    <p class="tagline">“Apasionado por la programación competitiva y el desarrollo de software.”</p>
+
+    <div class="avatar">
+      <img src="/img/imgAboutme/avatar.png" alt="Foto de perfil">
+    </div>
+
+    <p class="summary">
+      Soy estudiante de Ingeniería de Sistemas en la Universidad de la Amazonia.
+      Me apasiona la programación competitiva, el aprendizaje continuo y la creación
+      de proyectos tecnológicos que aporten soluciones reales.
+    </p>
+
+    <div class="cta">
+      <a href="/formacion.html">Formación</a>
+      <a href="/proyectos.html">Proyectos</a>
+      <a href="/contacto.html">Contacto</a>
+    </div>
+
+    <div class="skills">
+      <span class="skill">💻 Programación Competitiva</span>
+      <span class="skill">📊 Algoritmos</span>
+      <span class="skill">🎮 Desarrollo de Juegos</span>
+      <span class="skill">♟️ Ajedrez</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Jean Carlos Jiménez Ortega · Universidad de la Amazonia <br>
+    Florencia, Caquetá · Contacto: jean.jimenez@uniamazonia.edu.co
+  </footer>
 
 </body>
 </html>
