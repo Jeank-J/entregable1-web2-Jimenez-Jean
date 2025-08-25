@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+    flex: 0 0 5%;
+    border: solid 2px #000;
+}
+
+.container_info_superior{
+    flex: 10;
+    display: flex;
+    flex-direction: column;    
+}
+
+h1{
+    font-size: 2rem;    
+}
+
+.container_info_superior p{
+    font-size: 1.2rem;
+    font-style: italic;
+
+}
+
+header a{
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
+header a img{
+    width: 30px;
+    height: auto;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 5px;
+    border: solid 2px #000;
+    gap: 10px;
+}
+
+section{
+    flex: 1;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "logo subtitulo"
+    "descripcion descripcion";
+}
+
+.logo, .subtitulo{
+    display: flex;
+}
+.logo{
+    grid-area: logo;    
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.subtitulo{
+    grid-area: subtitulo;
+    justify-content: end;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+.logo, .subtitulo, .descripcion{
+    border: solid 2px #000;
+}
+
+
+
+.skills{
+    border: solid 2px #000;
+}
+
+
+

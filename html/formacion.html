@@ -1,161 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabajo Autodescriptivo</title>
-  <link rel="stylesheet" href="/style/about.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(to bottom, #0a2540, #2274df);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    header {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    header img {
-      width: 80px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    header h1 {
-      margin: 10px 0 0;
-      font-size: 1.6rem;
-    }
-
-    .intro {
-      text-align: center;
-      max-width: 600px;
-      margin: 20px;
-      padding: 15px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 10px;
-    }
-
-    .intro h2 {
-      margin: 10px 0 5px;
-      font-size: 1.4rem;
-    }
-
-    .tagline {
-      font-style: italic;
-      font-size: 0.95rem;
-      color: #ddd;
-    }
-
-    .avatar {
-      margin: 20px 0;
-    }
-
-    .avatar img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #00bfff;
-      object-fit: cover;
-    }
-
-    .summary {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      margin: 15px 0;
-    }
-
-    .cta {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 15px;
-    }
-
-    .cta a {
-      text-decoration: none;
-      background: #00bfff;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 20px;
-      transition: background 0.3s;
-    }
-
-    .cta a:hover {
-      background: #008ecc;
-    }
-
-    .skills {
-      margin: 25px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .skill {
-      background: rgba(255,255,255,0.12);
-      padding: 6px 14px;
-      border-radius: 15px;
-      font-size: 0.85rem;
-    }
-
-    footer {
-      margin-top: auto;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #ccc;
-      padding: 15px;
-      border-top: 1px solid rgba(255,255,255,0.2);
-      width: 100%;
-    }
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/formacion.css">
 </head>
 <body>
-
+  
   <header>
-    <img src="/img/imgIndex/logo_uniamazonia.png" alt="Logo Universidad">
-    <h1>Trabajo Autodescriptivo</h1>
+    <div class="container_info_superior">
+      <h1>Training and Skills</h1>
+      <p> Mis principales aprendizajes y habilidades en desarrollo.</p>
+    </div>
+    <a href="/index.html">
+      <img src="/img/imgIndex/inicio.png" alt="inicio">
+    </a>
   </header>
+  <main>    
+    <section> <!-- la estructura de algun contenido de formacion es: cuadro, dentro un cuadro header y main -->
+      <a class="logo" href="#">
+        <img src="/img/imgFormacion/uniamazoniaLogo.png" alt="Uniamazonia">
+      </a>
+      <h2 class="subtitulo"> Universidad de la Amazonia</h2>
+      <p class="descripcion"> Estudiante de pregrado activo </p>
+    </section>
 
-  <section class="intro">
-    <h2>Jean Carlos Jiménez Ortega</h2>
-    <p><strong>Estudiante de Ingeniería de Sistemas</strong></p>
-    <p class="tagline">“Apasionado por la programación competitiva y el desarrollo de software.”</p>
+    <section> <!-- la estructura de algun contenido de formacion es: cuadro, dentro un cuadro header y main -->
+      <a class="logo" href="#">
+        <img src="/img/imgFormacion/cunLogo.png" alt="Cun">
+      </a>
+      <h2 class="subtitulo"> cun </h2>
+      <p class="descripcion"> bootcamp</p>
+    </section>
 
-    <div class="avatar">
-      <img src="/img/imgAboutme/avatar.png" alt="Foto de perfil">
-    </div>
+    <section> <!-- la estructura de algun contenido de formacion es: cuadro, dentro un cuadro header y main -->
+      <a class="logo" href="#">
+        <img src="/img/imgFormacion/aluraLogo.jpeg" alt="AluraLatam">
+      </a>
+      <h2 class="subtitulo"> Alura Latam </h2>
+      <p class="descripcion"> cursos online </p>
 
-    <p class="summary">
-      Soy estudiante de Ingeniería de Sistemas en la Universidad de la Amazonia.
-      Me apasiona la programación competitiva, el aprendizaje continuo y la creación
-      de proyectos tecnológicos que aporten soluciones reales.
-    </p>
-
-    <div class="cta">
-      <a href="/formacion.html">Formación</a>
-      <a href="/proyectos.html">Proyectos</a>
-      <a href="/contacto.html">Contacto</a>
-    </div>
+    </section>
 
     <div class="skills">
-      <span class="skill">💻 Programación Competitiva</span>
-      <span class="skill">📊 Algoritmos</span>
-      <span class="skill">🎮 Desarrollo de Juegos</span>
-      <span class="skill">♟️ Ajedrez</span>
+      hola
     </div>
-  </section>
+  </main>
 
-  <footer>
-    © 2025 Jean Carlos Jiménez Ortega · Universidad de la Amazonia <br>
-    Florencia, Caquetá · Contacto: jean.jimenez@uniamazonia.edu.co
-  </footer>
-
+  
 </body>
 </html>
