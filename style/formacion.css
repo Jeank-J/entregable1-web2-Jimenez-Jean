@@ -157,7 +157,7 @@ section{
 
 /* ----- estructura para ubicar las habilidades ------- */
 .container_skill{
-    height: 55px;
+    height: 5%;
     width: 100%;    
     display: grid;
     border: solid 2px #f5f5f5;
@@ -224,7 +224,7 @@ section{
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 800px) and (min-heigth: 800px){
     body{
         height: 100vh;
     }
