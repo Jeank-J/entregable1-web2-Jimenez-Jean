@@ -222,6 +222,7 @@ section{
 @media (max-height: 500px){
     .container_skill{
         height: 30vh;
+        width: 100%;
     }
 }
 @media (min-width: 800px) and (min-height: 600px){
@@ -230,11 +231,11 @@ section{
         height: 100vh;
     }
     header{
-        height: 8%;
+        height: 10%;
         width: 100%;
     }
     main{
-        height: 92%;
+        height: 90%;
         width: 100%;
         flex-direction: row;
     }
@@ -290,9 +291,13 @@ section{
         padding: 5px;
     }
 
-    .container_skill{
-        height: 15%;
+    .container_skill{    
+        
+        padding: 1px 10px 10px 0px;    
         width: 100%;
+        
+        grid-template-columns: 1.5fr 8.5fr;
+        grid-template-rows: 1fr 6fr;
         overflow: hidden;
         grid-template-areas:
         "iconoLenguaje nombreLenguaje"
@@ -315,8 +320,9 @@ section{
         grid-template-rows: 2fr 2fr;
         grid-template-areas:        
         "a b"
-        "c d";
-        border: solid 1px #000;
+        "c d";        
+        box-shadow: 0 0 10px 5px rgba(74, 164, 224, 0.5);
+        border-radius: 20px;
         overflow: hidden;    
     }
     #a{ grid-area: a;}
