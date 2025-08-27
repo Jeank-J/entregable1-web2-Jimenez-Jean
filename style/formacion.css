@@ -151,13 +151,15 @@ section{
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
-    padding: 10px 15px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* ----- estructura para ubicar las habilidades ------- */
 .container_skill{
-    height: 5%;
+    height: 20%;
     width: 100%;    
     display: grid;
     border: solid 2px #f5f5f5;
@@ -221,10 +223,12 @@ section{
 }
 .container_img_code{
     display: none;
+    
 }
 
 
-@media (min-width: 800px) and (min-heigth: 800px){
+@media (min-width: 800px) and (min-height: 800px){
+
     body{
         height: 100vh;
     }
@@ -286,18 +290,32 @@ section{
     #Hard{
         width: 100%;
         height: 70%;
+        padding: 5px;
     }
-    #Soft{
-        width: 100%;
-        height: 30%;
-    }
+
     .container_skill{
-        flex: 1;
+        height: 12%;
+        width: 100%;
         overflow: hidden;
         grid-template-areas:
         "iconoLenguaje nombreLenguaje"
         "iconoLenguaje barra";        
     }
+
+    #Soft{
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+        padding: 10px;
+    }
+    
+    .skill_soft{
+        display: grid;
+        border: solid 1px #000;
+        overflow: hidden;
+        height: 10%;
+    }
+    
 
     
 }
