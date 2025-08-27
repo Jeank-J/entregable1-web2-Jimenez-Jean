@@ -153,12 +153,12 @@ section{
 
 .container_skill{        
     display: grid;
-    height: 110px;
+    height: 10vh;    
     border: solid 2px #f5f5f5;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px rgba(74, 164, 224, 0.5);
-    grid-template-columns: 1fr 9fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas:
     "iconoLenguaje nombreLenguaje"
     "barra barra";        
@@ -219,8 +219,12 @@ section{
     
 }
 
-
-@media (min-width: 800px) and (min-height: 800px){
+@media (max-height: 500px){
+    .container_skill{
+        height: 30vh;
+    }
+}
+@media (min-width: 800px) and (min-height: 600px){
 
     body{
         height: 100vh;
@@ -242,8 +246,8 @@ section{
         flex: 1;
         padding: 5px;
         display: grid;
-        grid-template-columns: 1fr 9fr;
-        grid-template-rows: 3fr 4fr;
+        grid-template-columns: 3fr 7fr;
+        grid-template-rows: 3fr 7fr;
         grid-template-areas: "logo subtitulo" "logo descripcion";
         overflow: hidden;
     }
