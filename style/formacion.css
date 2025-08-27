@@ -248,7 +248,7 @@ section{
         padding: 5px;
         display: grid;
         grid-template-columns: 3fr 7fr;
-        grid-template-rows: 3fr 7fr;
+        grid-template-rows: 3fr 6fr;
         grid-template-areas: "logo subtitulo" "logo descripcion";
         overflow: hidden;
     }
