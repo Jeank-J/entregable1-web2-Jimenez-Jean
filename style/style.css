@@ -85,9 +85,14 @@ nav {
     border-radius: 5px;
     white-space: nowrap;        
 }
-
+span{
+    display: flex;        
+    text-align: center;
+}
 .container_info_links:hover span {
     opacity: 1;
+    width: 100px;
+    white-space: normal;
 }
 
 .container_info_links:hover {
